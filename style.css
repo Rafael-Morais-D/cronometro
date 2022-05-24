@@ -1,0 +1,96 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIAVEIS */
+:root {
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+  --clock-font: 'Oxanium', sans-serif;
+}
+
+/* CRONOMETRO */
+
+h1 {
+  font-family: var(--title-font);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-family: var(--title-font);
+  text-align: center;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+button {
+  background: #fff;
+  font-family: var(--body-font);
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+button:nth-child(2) {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.cronoBody {
+  background: #000;
+  max-width: 17.5rem;
+  height: 17.5rem;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.cronoBox {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.cronoBody .buttons {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.cronometro {
+  color: #000;
+  font-family: var(--clock-font);
+  font-size: 2.5rem;
+}
+
+.recordList {
+  text-align: center;
+  list-style: none;
+}
+
+.recordList li {
+  font-family: var(--clock-font);
+  font-size: 1.5rem;
+}
